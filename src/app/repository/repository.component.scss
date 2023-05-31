@@ -1,0 +1,103 @@
+@use "../../styles/mixins.scss";
+
+form {
+  all: unset;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px;
+
+  input {
+    all: unset;
+    flex-grow: 1;
+    height: 50px;
+    border: 1px solid rgba(var(--accent-color), 0.5);
+    padding-left: 40px;
+    border-radius: 1rem;
+    background: url("../../assets/svg/searchIcon.svg") 2.5% center no-repeat;
+    &:hover {
+      border-color: rgba(var(--accent-color), 1);
+      background-color: rgba(var(--accent-color), 0.1);
+    }
+
+    &::placeholder{
+      color: white;
+    }
+  }
+  select {
+    all: unset;
+    flex-grow: 1;
+    padding: 1rem;
+    border: 1px solid rgba(var(--accent-color), 0.5);
+    text-align: center;
+    border-radius: 1rem;
+    background: url("../../assets/svg/chevronDown.svg") 90% center no-repeat;
+    min-width: 188px;
+    &:hover {
+      border-color: rgba(var(--accent-color), 1);
+      background-color: rgba(var(--accent-color), 0.1);
+    }
+  }
+}
+
+.repository-list {
+  display: flex;
+  flex-flow: row wrap;
+
+  .card {
+    @include mixins.card();
+    flex: 1 1 20rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    .button-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 1rem;
+
+      border-top: 1px solid white;
+
+      button {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-align: inherit;
+        font: inherit;
+        border-radius: 0;
+        appearance: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          margin: 0;
+          padding: 0;
+        }
+
+        svg {
+          color: white;
+          margin: 5px;
+
+          &:hover{
+            color: rgba(var(--accent-color), 1);
+          }
+        }
+
+        span {
+          color: rgba(var(--accent-color), 1);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

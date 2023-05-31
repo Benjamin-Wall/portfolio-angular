@@ -1,0 +1,34 @@
+@use "./styles/normalize.scss";
+
+:root {
+  --accent-color: 53, 152, 143;
+}
+
+html * {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-image: url("assets/svg/wave-haikei.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
