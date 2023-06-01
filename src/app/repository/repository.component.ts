@@ -25,14 +25,14 @@ export class RepositoryComponent {
     switch (this.selectedFilter) {
       case 'default':
         this.filteredRepositories = this.repositories.filter((repository) =>
-          repository.name.toLowerCase().startsWith(this.searchTerm)
+          repository.name.toLowerCase().startsWith(this.searchTerm.toLowerCase())
         );
         break;
 
       case 'stars':
         this.filteredRepositories = this.repositories
           .filter((repository) =>
-            repository.name.toLowerCase().startsWith(this.searchTerm)
+            repository.name.toLowerCase().startsWith(this.searchTerm.toLowerCase())
           )
           .sort((a, b) => b.stargazers_count - a.stargazers_count);
         break;
@@ -40,9 +40,10 @@ export class RepositoryComponent {
       case 'forks':
         this.filteredRepositories = this.repositories
           .filter((repository) =>
-            repository.name.toLowerCase().startsWith(this.searchTerm)
+            repository.name.toLowerCase().startsWith(this.searchTerm.toLowerCase())
           )
           .sort((a, b) => b.forks - a.forks);
+        break;
     }
   }
 }
