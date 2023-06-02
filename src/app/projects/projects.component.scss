@@ -1,8 +1,8 @@
 @use "../../styles/mixins.scss";
 
 section {
-    @include mixins.section();
-    p {
-        text-align: center;
-    }
+  @include mixins.section();
+  p {
+    text-align: center;
+  }
 }

@@ -21,7 +21,7 @@ form {
       background-color: rgba(var(--accent-color), 0.1);
     }
 
-    &::placeholder{
+    &::placeholder {
       color: white;
     }
   }
@@ -88,7 +88,7 @@ form {
           color: white;
           margin: 5px;
 
-          &:hover{
+          &:hover {
             color: rgba(var(--accent-color), 1);
           }
         }

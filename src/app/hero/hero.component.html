@@ -1,10 +1,16 @@
 <section class="hero-section">
-    <section class="hero-img" (click)="changeAccentColor()">
-        <img src="../../assets/img/headshot.png" alt="Headshot of Benjamin">
-    </section>
-    <section class="hero-text">
-        <h1>Hello, my name is <span class="highlight">Ben</span>!</h1>
-        <p>I am <app-age/> years old and I am currently learning to be a Full-Stack Web Developer, Below you
-            can learn more about me!</p>
-    </section>
+  <section class="hero-img" (click)="changeAccentColor()">
+    <img src="../../assets/img/headshot.png" alt="Headshot of Benjamin" />
+  </section>
+  <section class="hero-text">
+    <h1>Hello, my name is <span class="highlight">Ben</span>!</h1>
+    <h2>
+      I'm a
+      <span typingAnimator [sentences]="['Developer', 'Gamer', 'Dad']"></span>
+    </h2>
+    <p>
+      I am <app-age /> years old and I am currently learning how to be a Web
+      Developer, below you can learn more about me!
+    </p>
+  </section>
 </section>

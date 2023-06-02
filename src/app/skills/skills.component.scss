@@ -7,7 +7,7 @@ section {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr;
-    
+
     .skill {
       @include mixins.card();
       width: 150px;
@@ -27,20 +27,20 @@ section {
   }
 }
 
-@media screen and (min-width: 478px){
-    .skills-wrapper {
-        grid-template-columns: 1fr 1fr !important;
-    }
+@media screen and (min-width: 478px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 
-@media screen and (min-width: 700px){
-    .skills-wrapper {
-        grid-template-columns: 1fr 1fr 1fr !important;
-    }
+@media screen and (min-width: 700px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
 }
 
-@media screen and (min-width: 1000px){
-    .skills-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr !important;
-    }
+@media screen and (min-width: 1000px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
 }

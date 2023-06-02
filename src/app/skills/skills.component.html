@@ -1,12 +1,14 @@
 <section>
-    <h2>🧰 Skills:</h2>
-    <p>Currently i mainly have experience with Front-End Development. This includes the following:</p>
-    <section class="skills-wrapper">
-
-        <div class="skill" *ngFor="let skill of skills">
-            <a href={{skill.url}} target="_blank"></a>
-            <div class="skill-icon" [innerHTML]="skill.icon"></div>
-            <p>{{skill.name}}</p>
-        </div>
-    </section>
+  <h2>🧰 Skills:</h2>
+  <p>
+    Currently i mainly have experience with Front-End Development. This includes
+    the following:
+  </p>
+  <section class="skills-wrapper">
+    <div class="skill" *ngFor="let skill of skills">
+      <a href="{{ skill.url }}" target="_blank"></a>
+      <div class="skill-icon" [innerHTML]="skill.icon"></div>
+      <p>{{ skill.name }}</p>
+    </div>
+  </section>
 </section>

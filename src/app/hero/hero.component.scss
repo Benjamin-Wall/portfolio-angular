@@ -6,7 +6,11 @@
   width: 100%;
 
   .hero-text {
+    font-size: 1.2rem;
     max-width: 480px;
+    h2 {
+      letter-spacing: 5px;
+    }
   }
   img {
     border: 4px solid rgb(var(--accent-color));
